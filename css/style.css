@@ -14,11 +14,13 @@ ul, ol{
     background-color: #141923;
 }
 #app .side-bar{
-    height: calc(100vh - 50px);
+    height: calc(100vh - 75px);
     width: 250px;
     background-color: black;
     justify-content: flex-start;
     flex-direction: column;
+    position: absolute;
+    top: 0;
 }
 #app .side-bar .logo{
     padding: 20px;
@@ -31,12 +33,31 @@ ul, ol{
     margin-top: auto;
     padding: 15px;
 }
-#app footer{
+#app .top-bar{
+    background-color: #0E121B;
     height: 50px;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+}
+#app .top-bar button{
+    /* display: flex; */
+    line-height: 35px;
+    width: 80px;
+    color: black;
+    border-radius: 999px;
+}
+#app footer{
+    height: 75px;
     width: 100%;
     background-color: #282828;
     align-items: center;
+    padding: 0 15px;
+    position: absolute;
+    bottom: 0;
 }
+
+
 /* style */
 .row{
     flex-direction: row;
